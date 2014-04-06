@@ -1,0 +1,8 @@
+application: fish-basket
+
+dispatch:
+  - url: "*/api*"
+    module: backend
+
+  - url: "*/*"
+    module: ui
