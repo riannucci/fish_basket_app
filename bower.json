@@ -3,8 +3,6 @@
   "version": "0.0.0",
   "dependencies": {
     "angular": "1.2.15",
-    "json3": "~3.2.6",
-    "es5-shim": "~2.1.0",
     "angular-resource": "1.2.15",
     "angular-cookies": "1.2.15",
     "angular-sanitize": "1.2.15",
@@ -19,7 +17,7 @@
     "Robert Iannucci <robbie@rail.com>"
   ],
   "description": "Somehow there are always more fish in the basket.",
-  "main": "ui/index.html",
+  "main": "app.yaml",
   "moduleType": [
     "amd"
   ],
