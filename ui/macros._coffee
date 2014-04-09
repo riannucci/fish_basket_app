@@ -14,7 +14,7 @@
 macro ngFn (fn) ->
   if fn.params.length > 0
     v = ("'#{p.name.value}'" for p in fn.params)
-    macro.jsToNode "[#{v.join(', ')}, #{(macro.nodeToVal fn).toString()}]"
+    macro.jsToNode "[#{v.join(', ')}, #{(macro.nodeToVal fn)}]"
   else
     fn
 
