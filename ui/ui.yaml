@@ -15,7 +15,7 @@ handlers:
   static_files: index.html
   upload: index.html
 
-- url: '/components/(angular-strap|bootstrap|jquery)/(.*)'
+- url: '/components/(angular-ui-bootstrap|bootstrap|jquery)/(.*)'
   static_files: components/\1/dist/\2
   upload: components/.*/dist/.*
 
