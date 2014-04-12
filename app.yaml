@@ -16,6 +16,10 @@ handlers:
 - url: /api/.*
   script: _go_app
 
+- url: /(.*)\.(css|js|js.map)
+  static_files: ui/\1.\2
+  upload: ui/.*.(css|js)
+
 - url: (.*)/
   static_files: ui\1/index.html
   upload: ui/.*.html
