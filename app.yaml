@@ -18,15 +18,11 @@ handlers:
 
 - url: /(.*)\.(css|js|js.map)
   static_files: ui/\1.\2
-  upload: ui/.*.(css|js)
+  upload: ui/.*
 
-- url: (.*)/
-  static_files: ui\1/index.html
-  upload: ui/.*.html
-
-- url: /(.*)
-  static_files: ui/\1.html
-  upload: ui/.*.html
+- url: /
+  static_files: ui/index.html
+  upload: ui/.*
 
 skip_files:
 - ^(.*/)?#.*#$
